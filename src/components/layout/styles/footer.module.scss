@@ -1,0 +1,25 @@
+footer{
+    background: #666;
+    color: white;
+    padding: 10px 30px;
+    p{
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@supports(display: grid){
+    @media screen and (min-width: 860px){
+        footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            p:nth-child(1){
+                text-align: left;
+            }
+            p:nth-child(3){
+                text-align: right;
+            }
+        }
+    }
+}
