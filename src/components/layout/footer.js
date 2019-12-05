@@ -3,8 +3,8 @@ import "./styles/footer.module.scss"
 
 export default () => (
     <footer>
-        <p>This is an attractive footer</p>
-        <p>See the nice content</p>
-        <p>And how well it scales...</p>
+        <p>&copy; Copyright 2019</p>
+        <p>The Fantastic Site Inc</p>
+        <p>Links here</p>
     </footer>
 )

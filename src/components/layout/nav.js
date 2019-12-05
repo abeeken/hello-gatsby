@@ -6,7 +6,6 @@ export default () => (
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/forkieran">Just for Kieran...</a></li>
         </ul>
     </nav>
 )

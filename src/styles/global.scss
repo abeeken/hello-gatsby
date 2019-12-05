@@ -1,10 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Solway', serif;
     margin: 0;
     padding: 0;
+    background: #ccc;
+    color: #333;
 }
 
 img{
     width: 100%;
+}
+
+/**
+* Main site
+*/
+.site{
+    background: white;    
+}
+
+@media screen and (min-width: 1000px){
+    .site{
+        max-width: 1000px;
+        margin: 20px auto;        
+        -webkit-box-shadow: 0 0 5px 1px #999;
+        box-shadow: 0 0 5px 1px #999;        
+    }
+}
+
+/**
+* Pages
+*/
+.page{
+    padding: 30px;
+}
+
+.headerimage{
+    height: 300px;
+    object-fit: cover;
 }
