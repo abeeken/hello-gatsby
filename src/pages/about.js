@@ -1,9 +1,13 @@
 import React from "react"
 import Content from "../components/layout/content"
 import pic from "../assets/IMG_20180822_141058.jpg"
+import { Helmet } from "react-helmet"
 
 export default () => (
   <Content>
+    <Helmet>
+      <title>The Fantastic Site | About</title>
+    </Helmet>
     <img class="headerimage" src={pic} alt="Castle" />
     <div class="page">
         <h2>About</h2>
