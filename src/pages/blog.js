@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet"
 
 const BlogPage = ({data}) => {
     const {edges} = data.allMarkdownRemark
-    console.log(edges)
     return(
         <Content>
             <Helmet>
