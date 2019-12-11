@@ -30,20 +30,18 @@ const BlogPage = ({data}) => {
 export default BlogPage
 
 export const query = graphql`
-    query {
-        allMarkdownRemark (
-            sort: {order: DESC, fields: [frontmatter___date]}
-        ) {
-            edges {
-                node {
-                    excerpt(pruneLength: 250)
-                    frontmatter {
-                        date(formatString: "MMMM DD, YYYY")
-                        title
-                        path
-                    }
-                }
-            }
+query {
+    allMarkdownRemark(filter: {frontmatter: {path: {glob: "/blog/*"}}}, sort: {order: DESC, fields: frontmatter___date}) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date
+            path
+          }
+          excerpt(pruneLength: 250)
         }
+      }
     }
+  }
 `
