@@ -14,10 +14,10 @@ collections:
         - { name: title, label: Title }
         - { name: body, label: Body, widget: markdown }
  -  name: page
-        label: Page
-        folder: content/pages
-        create: true
-        fields:
-            - { name: path, label: Path }
-            - { name: title, label: Title }
-            - { name: body, label: Body, widget: markdown }
+    label: Page
+    folder: content/pages
+    create: true
+    fields:
+        - { name: path, label: Path }
+        - { name: title, label: Title }
+        - { name: body, label: Body, widget: markdown }
