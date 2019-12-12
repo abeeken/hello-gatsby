@@ -11,9 +11,8 @@ export default () => (
     <img class="headerimage" src={pic} alt="Castle" />
     <div class="page">
         <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit odio sit amet mi eleifend pharetra. Sed nec urna nec nibh gravida vestibulum. Proin efficitur ex vitae quam consectetur ullamcorper. Nulla facilisi. Donec bibendum viverra ultrices. Proin dapibus nibh sed turpis commodo, at hendrerit nisi finibus. Fusce porttitor mauris nec nibh tincidunt mattis.</p>
-
-        <p>Vivamus vitae ipsum quis ligula pharetra porttitor. Morbi vel enim convallis, tristique quam in, iaculis ligula. Aliquam nec porta felis. Nulla sed felis vel nisi consectetur gravida. Nam vel ex leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut magna felis, tincidunt et felis accumsan, viverra mollis orci. Vivamus eget tempor mi. Nam convallis semper commodo. Duis tincidunt iaculis neque id facilisis. Morbi nec est lobortis, mattis ex nec, porttitor sapien. Quisque a ante condimentum mi dictum suscipit sed nec nisi.</p>
+        <p>This is as little site I put together to play around with Gatsby and Netlify. You can find the source code on GitHub at: <a href="https://github.com/abeeken/hello-gatsby">https://github.com/abeeken/hello-gatsby</a> and you can visit my site at <a href="https://andrewbeeken.co.uk/">https://andrewbeeken.co.uk/</a></p>
+        <p>Hit me up at <a href="https://twitter.com/abeeken">@abeeken</a></p>
     </div>
   </Content>
 )
