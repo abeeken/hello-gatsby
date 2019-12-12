@@ -1,5 +1,6 @@
 ---
 path: /blog/final-test
+type: blog
 date: 2019-12-09T15:39:31.930Z
 title: Final Test
 ---

@@ -1,5 +1,6 @@
 ---
-path: about-2
+path: /about-2
+type: page
 title: About 2
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit odio sit amet mi eleifend pharetra. Sed nec urna nec nibh gravida vestibulum. Proin efficitur ex vitae quam consectetur ullamcorper. Nulla facilisi. Donec bibendum viverra ultrices. Proin dapibus nibh sed turpis commodo, at hendrerit nisi finibus. Fusce porttitor mauris nec nibh tincidunt mattis.

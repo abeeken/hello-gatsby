@@ -1,5 +1,6 @@
 ---
 path: /blog/hello-world
+type: blog
 date: 2019-12-09T14:08:48.830Z
 title: Hello World!
 ---

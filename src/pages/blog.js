@@ -36,7 +36,7 @@ query {
         node {
           frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
             path
           }
           excerpt(pruneLength: 250)
