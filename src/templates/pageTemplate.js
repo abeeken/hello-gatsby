@@ -13,6 +13,7 @@ export default function Template({
             <Helmet>
                 <title>The Fantastic Site | { frontmatter.title }</title>
             </Helmet>
+            <img class="headerimage" src={ frontmatter.featured_image } alt="Gate" />
             <div class="page">
                 <h2>{ frontmatter.title }</h2>
                 <div
@@ -30,6 +31,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        featured_image
       }
     }
   }
