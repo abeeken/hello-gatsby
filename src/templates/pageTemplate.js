@@ -8,12 +8,13 @@ export default function Template({
 }) {
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html } = markdownRemark
+    console.log(frontmatter.featured_image)
     return (            
         <Content>
             <Helmet>
                 <title>The Fantastic Site | { frontmatter.title }</title>
             </Helmet>
-            <img class="headerimage" src={ frontmatter.featured_image } alt="Gate" />
+            { frontmatter.featured_image !== null && <img class="headerimage" src={ frontmatter.featured_image } /> }
             <div class="page">
                 <h2>{ frontmatter.title }</h2>
                 <div

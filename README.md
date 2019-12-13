@@ -12,5 +12,6 @@ This is very much a work-in-progress project designed to be a good starting poin
 * Auto generated page/post slugs
 * Content search
 * Widgetised areas
+* Forms and form submission
 * Front end Javascript
 * Understanding users and logins for non admin's on Netlify
