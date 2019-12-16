@@ -2,6 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import Content from "../components/layout/content"
 import { Helmet } from "react-helmet"
+
+// This isn't currently working properly!
+// Note to self, if you want to get it working again, remove the Img and childImageSharp stuff below, render the featured image into a regular img tag. BUT you won't be using the image optimisation. :(
+
 import Img from "gatsby-image"
 
 export default function Template({
