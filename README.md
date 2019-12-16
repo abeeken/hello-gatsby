@@ -11,7 +11,9 @@ This is very much a work-in-progress project designed to be a good starting poin
 * Image optimisation
 * Auto generated page/post slugs
 * Content search
+* RSS feed
 * Widgetised areas
 * Forms and form submission
 * Front end Javascript
+* Understanding how best to optimise content for SEO (i.e. head meta)
 * Understanding users and logins for non admin's on Netlify
