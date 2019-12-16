@@ -5,19 +5,11 @@
  */
 
 module.exports = {
-  plugins: [
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        enableIdentityWidget: true,
-      }
-    },
+  plugins: [    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog-images`,
+        name: `blogassets`,
         path: `${__dirname}/static/assets`,
       },
     },
@@ -35,7 +27,14 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
-    
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
