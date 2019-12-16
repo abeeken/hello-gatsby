@@ -22,8 +22,6 @@ export const query = graphql`
 query {
     file(relativePath: { eq: "IMG_20181028_155042.jpg" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid_noBase64
         }
