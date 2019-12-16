@@ -22,10 +22,15 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "gatsby-image": "^2.2.36",
     "gatsby-plugin-netlify-cms": "^4.1.31",
     "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sharp": "^2.3.8",
+    "gatsby-remark-images": "^3.1.38",
+    "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.6.39",
+    "gatsby-transformer-sharp": "^2.3.9",
     "netlify-cms-app": "^2.9.7",
     "prettier": "^1.19.1",
     "react-helmet": "^5.2.1"
