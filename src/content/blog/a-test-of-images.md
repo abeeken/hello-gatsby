@@ -1,5 +1,5 @@
 ---
-path: Image test
+path: /blog/image-test
 type: blog
 date: 2019-12-17T16:21:09.281Z
 title: A test of images
