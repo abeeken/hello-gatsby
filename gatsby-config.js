@@ -14,6 +14,31 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-plugin-netlify-cms-paths`,
+            options: {
+              cmsConfig: `/static/admin/config.yml`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: `blogassets`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options:{
+              maxWidth: 1000,
+            }
+          }
+        ]
+      }
+    },    
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
@@ -27,6 +52,8 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+    `gatsby-plugin-sharp`, 
+    `gatsby-transformer-sharp`,      
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
@@ -35,21 +62,6 @@ module.exports = {
         enableIdentityWidget: true,
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-relative-images`,
-          {
-            resolve: `gatsby-remark-images`,
-            options:{
-              maxWidth: 1000,
-            }
-          }
-        ]
-      }
-    }
+    `gatsby-plugin-netlify`
   ],
 }

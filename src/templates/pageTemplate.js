@@ -19,7 +19,7 @@ export default function Template({
             <Helmet>
                 <title>The Fantastic Site | { frontmatter.title }</title>
             </Helmet>
-            { frontmatter.featured_image !== null && <Img className="headerimage" fluid={ frontmatter.featured_image.childImageSharp.fluid } /> }
+            { frontmatter.featured_image !== null && <Img className="headerimage" fluid={ frontmatter.featured_image.childImageSharp.fluid.src } /> }
             <div class="page">
                 <h2>{ frontmatter.title }</h2>
                 <div
@@ -40,8 +40,9 @@ export const pageQuery = graphql`
         featured_image {
           childImageSharp {
             fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid_noBase64
+              ...GatsbyImageSharpFluid
             }
+            publicURL
           }
         }
       }
