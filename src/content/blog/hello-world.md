@@ -2,6 +2,7 @@
 path: /blog/hello-world
 type: blog
 date: 2019-12-09T14:08:48.830Z
+featured-image: /assets/mvimg_20191021_133653.jpg
 title: Hello World!
 ---
 This is a test of publishing content in a Gatsby site.

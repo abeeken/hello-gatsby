@@ -6,22 +6,11 @@ public_folder: assets
 collections:
  -  name: blog
     label: Blog
-    folder: content/blog
+    folder: src/content/blog
     create: true
     fields:
         - { name: path, label: Path }
         - { name: type, label: Type, widget: hidden, default: "blog" }
         - { name: date, label: Date, widget: datetime }
-        - { name: title, label: Title }
-        - { name: body, label: Body, widget: markdown }
- -  name: page
-    label: Page
-    folder: content/pages
-    create: true
-    fields:
-        - { name: path, label: Path }
-        - { name: type, label: Type, widget: hidden, default: "page" }
-        - { name: menu-position, label: Menu Position, widget: number, default: 0 }
-        - { name: featured-image, label: Featured Image, widget: image }
         - { name: title, label: Title }
         - { name: body, label: Body, widget: markdown }

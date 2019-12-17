@@ -27,11 +27,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    if(node.frontmatter.type == "post"){
-      var blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
-    } else {
-      var blogPostTemplate = path.resolve(`src/templates/pageTemplate.js`)
-    }
+    var blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
